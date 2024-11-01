@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rampart+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(15, 2, 58);
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-image: url(/img/brasil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    font-family: "JetBrains Mono", serif;
+    font-weight: bold;
+    color: #b9b2b2;
+}
+
+.font {
+    font-size: 45px;
+    background-color: rgba(0, 255, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    color: #0d0ac9;
+    font-weight: 800;
+    border: 2px solid white;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.log {
+    margin-right: 30px;
+    padding-top: 20px;
+    color: black;
+    border-bottom: 4px solid white;
+    font-size: 25px;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu {
+    margin-left: 0;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 255, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    border: 2px solid white;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+    color: yellow;
+}
+/* Ajuste Adicional para Responsividade do Texto */
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 250px;
+    text-align: center;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.texto:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translate(-50%, -50%) scale(1.1);
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/img/rafinha.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: yellow;
+    margin-bottom: -40px;
+}
+
+/* Responsivo para iPhone 14 */
+@media (max-width: 390px) {
+    .texto {
+        font-size: 14px;
+        padding: 5px 10px;
+        margin-top: 200px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        height: 100px;
+    }
+
+    .log {
+        font-size: 18px;
+    }
+
+    .menu a {
+        padding: 7px 15px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
